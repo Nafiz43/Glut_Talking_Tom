@@ -2,9 +2,9 @@
 #include <windows.h>
 #include <GL/glut.h>
 #include <math.h>
-
+#include<stdio.h>
 #define PI 3.1416
-
+using namespace std;
 //u and f added with all the vertices that make the car so that all parts of the car are moving equally together in a particular direction
 
 float u= 0.0; //a variable to control x-values of coordinates so that the car can move in X-axis. Initially to keep the car still, set u=0
@@ -3246,8 +3246,1046 @@ void ball()
        glPopMatrix();
 }
 
+void tal_cloud()
+{
+    glPushMatrix();
+       glTranslatef(1050.0,1240.0,0); //Here glTranslate is used for proper positioning of the shape on the screen. Try to change the values here and see the effect
+       glBegin(GL_POLYGON);
+       //glColor3f(0.8627450980392157, 0.8627450980392157, 0.8627450980392157);
+        //glColor3f(0.88, 0.88, 0.88);
+        glColor3f(0.45, 0.75, 0.15);
+
+ glVertex2f (1050+u,441+f);
+glVertex2f (1053+u,447+f);
+glVertex2f (1055+u,452+f);
+glVertex2f (1061+u,461+f);
+glVertex2f (1061+u,469+f);
+glVertex2f (1061+u,474+f);
+glVertex2f (1059+u,480+f);
+glVertex2f (1059+u,487+f);
+glVertex2f (1053+u,493+f);
+glVertex2f (1050+u,498+f);
+glVertex2f (1044+u,502+f);
+glVertex2f (1041+u,507+f);
+glVertex2f (1033+u,511+f);
+glVertex2f (1030+u,515+f);
+glVertex2f (1028+u,516+f);
+glVertex2f (1017+u,518+f);
+glVertex2f (1008+u,522+f);
+glVertex2f (1000+u,522+f);
+glVertex2f (995+u,522+f);
+glVertex2f (987+u,522+f);
+glVertex2f (976+u,518+f);
+glVertex2f (971+u,518+f);
+glVertex2f (969+u,524+f);
+glVertex2f (969+u,527+f);
+glVertex2f (965+u,537+f);
+glVertex2f (962+u,542+f);
+glVertex2f (956+u,546+f);
+glVertex2f (953+u,551+f);
+glVertex2f (949+u,557+f);
+glVertex2f (942+u,564+f);
+glVertex2f (938+u,564+f);
+glVertex2f (934+u,568+f);
+glVertex2f (931+u,571+f);
+glVertex2f (923+u,573+f);
+glVertex2f (918+u,575+f);
+glVertex2f (910+u,577+f);
+glVertex2f (903+u,577+f);
+glVertex2f (898+u,581+f);
+glVertex2f (888+u,582+f);
+glVertex2f (881+u,582+f);
+glVertex2f (874+u,584+f);
+glVertex2f (870+u,584+f);
+glVertex2f (855+u,586+f);
+glVertex2f (850+u,586+f);
+glVertex2f (844+u,586+f);
+glVertex2f (837+u,586+f);
+glVertex2f (824+u,586+f);
+glVertex2f (819+u,586+f);
+glVertex2f (811+u,586+f);
+glVertex2f (802+u,584+f);
+glVertex2f (797+u,582+f);
+glVertex2f (791+u,579+f);
+glVertex2f (778+u,575+f);
+glVertex2f (773+u,571+f);
+glVertex2f (764+u,566+f);
+glVertex2f (756+u,562+f);
+glVertex2f (751+u,562+f);
+glVertex2f (745+u,568+f);
+glVertex2f (742+u,570+f);
+glVertex2f (734+u,573+f);
+glVertex2f (731+u,575+f);
+glVertex2f (723+u,577+f);
+glVertex2f (720+u,577+f);
+glVertex2f (714+u,581+f);
+glVertex2f (709+u,584+f);
+glVertex2f (700+u,584+f);
+glVertex2f (687+u,588+f);
+glVertex2f (678+u,588+f);
+glVertex2f (668+u,588+f);
+glVertex2f (661+u,588+f);
+glVertex2f (652+u,588+f);
+glVertex2f (639+u,588+f);
+glVertex2f (628+u,584+f);
+glVertex2f (619+u,581+f);
+glVertex2f (608+u,577+f);
+glVertex2f (602+u,573+f);
+glVertex2f (593+u,570+f);
+glVertex2f (588+u,566+f);
+glVertex2f (580+u,562+f);
+glVertex2f (575+u,555+f);
+glVertex2f (569+u,549+f);
+glVertex2f (566+u,551+f);
+glVertex2f (557+u,557+f);
+glVertex2f (551+u,559+f);
+glVertex2f (546+u,562+f);
+glVertex2f (540+u,562+f);
+glVertex2f (535+u,566+f);
+glVertex2f (526+u,568+f);
+glVertex2f (516+u,571+f);
+glVertex2f (507+u,573+f);
+glVertex2f (498+u,575+f);
+glVertex2f (489+u,575+f);
+glVertex2f (480+u,575+f);
+glVertex2f (472+u,575+f);
+glVertex2f (461+u,575+f);
+glVertex2f (454+u,573+f);
+glVertex2f (449+u,573+f);
+glVertex2f (438+u,571+f);
+glVertex2f (428+u,566+f);
+glVertex2f (425+u,566+f);
+glVertex2f (406+u,562+f);
+glVertex2f (397+u,557+f);
+glVertex2f (392+u,551+f);
+glVertex2f (386+u,546+f);
+glVertex2f (381+u,540+f);
+glVertex2f (379+u,538+f);
+glVertex2f (375+u,537+f);
+glVertex2f (364+u,538+f);
+glVertex2f (357+u,540+f);
+glVertex2f (355+u,540+f);
+glVertex2f (348+u,540+f);
+glVertex2f (335+u,544+f);
+glVertex2f (322+u,546+f);
+glVertex2f (315+u,548+f);
+glVertex2f (306+u,549+f);
+glVertex2f (296+u,549+f);
+glVertex2f (287+u,549+f);
+glVertex2f (278+u,549+f);
+glVertex2f (267+u,549+f);
+glVertex2f (256+u,549+f);
+glVertex2f (247+u,549+f);
+glVertex2f (238+u,549+f);
+glVertex2f (230+u,548+f);
+glVertex2f (221+u,546+f);
+glVertex2f (212+u,542+f);
+glVertex2f (201+u,540+f);
+glVertex2f (190+u,537+f);
+glVertex2f (183+u,533+f);
+glVertex2f (170+u,526+f);
+glVertex2f (163+u,522+f);
+glVertex2f (155+u,518+f);
+glVertex2f (150+u,511+f);
+glVertex2f (141+u,504+f);
+glVertex2f (131+u,493+f);
+glVertex2f (126+u,478+f);
+glVertex2f (126+u,469+f);
+glVertex2f (126+u,456+f);
+glVertex2f (122+u,450+f);
+glVertex2f (113+u,450+f);
+glVertex2f (106+u,450+f);
+glVertex2f (95+u,450+f);
+glVertex2f (80+u,450+f);
+glVertex2f (69+u,449+f);
+glVertex2f (58+u,447+f);
+glVertex2f (53+u,445+f);
+glVertex2f (45+u,439+f);
+glVertex2f (38+u,434+f);
+glVertex2f (31+u,428+f);
+glVertex2f (27+u,423+f);
+glVertex2f (20+u,416+f);
+glVertex2f (16+u,403+f);
+glVertex2f (16+u,392+f);
+glVertex2f (20+u,386+f);
+glVertex2f (25+u,381+f);
+glVertex2f (31+u,377+f);
+glVertex2f (34+u,372+f);
+glVertex2f (42+u,366+f);
+glVertex2f (53+u,362+f);
+glVertex2f (56+u,362+f);
+glVertex2f (60+u,357+f);
+glVertex2f (73+u,353+f);
+glVertex2f (80+u,350+f);
+glVertex2f (67+u,346+f);
+glVertex2f (54+u,342+f);
+glVertex2f (54+u,329+f);
+glVertex2f (53+u,317+f);
+glVertex2f (53+u,307+f);
+glVertex2f (56+u,302+f);
+glVertex2f (60+u,295+f);
+glVertex2f (65+u,291+f);
+glVertex2f (73+u,285+f);
+glVertex2f (78+u,282+f);
+glVertex2f (84+u,276+f);
+glVertex2f (89+u,274+f);
+glVertex2f (98+u,269+f);
+glVertex2f (111+u,265+f);
+glVertex2f (120+u,265+f);
+glVertex2f (133+u,263+f);
+glVertex2f (142+u,263+f);
+glVertex2f (142+u,256+f);
+glVertex2f (150+u,245+f);
+glVertex2f (159+u,240+f);
+glVertex2f (168+u,234+f);
+glVertex2f (183+u,229+f);
+glVertex2f (192+u,227+f);
+glVertex2f (205+u,223+f);
+glVertex2f (218+u,218+f);
+glVertex2f (229+u,214+f);
+glVertex2f (238+u,214+f);
+glVertex2f (249+u,212+f);
+glVertex2f (258+u,212+f);
+glVertex2f (265+u,210+f);
+glVertex2f (276+u,208+f);
+glVertex2f (280+u,208+f);
+glVertex2f (291+u,208+f);
+glVertex2f (300+u,207+f);
+glVertex2f (311+u,207+f);
+glVertex2f (326+u,207+f);
+glVertex2f (342+u,207+f);
+glVertex2f (355+u,207+f);
+glVertex2f (366+u,210+f);
+glVertex2f (379+u,212+f);
+glVertex2f (390+u,216+f);
+glVertex2f (395+u,219+f);
+glVertex2f (410+u,219+f);
+glVertex2f (417+u,227+f);
+glVertex2f (425+u,221+f);
+glVertex2f (434+u,216+f);
+glVertex2f (447+u,212+f);
+glVertex2f (456+u,208+f);
+glVertex2f (469+u,205+f);
+glVertex2f (478+u,203+f);
+glVertex2f (487+u,199+f);
+glVertex2f (496+u,194+f);
+glVertex2f (509+u,194+f);
+glVertex2f (518+u,192+f);
+glVertex2f (533+u,190+f);
+glVertex2f (548+u,188+f);
+glVertex2f (560+u,188+f);
+glVertex2f (568+u,186+f);
+glVertex2f (579+u,186+f);
+glVertex2f (580+u,186+f);
+glVertex2f (599+u,186+f);
+glVertex2f (617+u,188+f);
+glVertex2f (632+u,190+f);
+glVertex2f (645+u,192+f);
+glVertex2f (659+u,194+f);
+glVertex2f (670+u,199+f);
+glVertex2f (687+u,205+f);
+glVertex2f (701+u,216+f);
+glVertex2f (709+u,221+f);
+glVertex2f (720+u,230+f);
+glVertex2f (727+u,240+f);
+glVertex2f (734+u,245+f);
+glVertex2f (747+u,241+f);
+glVertex2f (758+u,240+f);
+glVertex2f (771+u,236+f);
+glVertex2f (789+u,236+f);
+glVertex2f (800+u,236+f);
+glVertex2f (810+u,236+f);
+glVertex2f (826+u,236+f);
+glVertex2f (843+u,238+f);
+glVertex2f (857+u,240+f);
+glVertex2f (874+u,247+f);
+glVertex2f (883+u,247+f);
+glVertex2f (888+u,249+f);
+glVertex2f (896+u,252+f);
+glVertex2f (903+u,256+f);
+glVertex2f (912+u,262+f);
+glVertex2f (920+u,271+f);
+glVertex2f (927+u,276+f);
+glVertex2f (934+u,285+f);
+glVertex2f (936+u,295+f);
+glVertex2f (936+u,304+f);
+glVertex2f (938+u,315+f);
+glVertex2f (951+u,313+f);
+glVertex2f (965+u,313+f);
+glVertex2f (976+u,313+f);
+glVertex2f (987+u,315+f);
+glVertex2f (997+u,317+f);
+glVertex2f (1006+u,320+f);
+glVertex2f (1020+u,326+f);
+glVertex2f (1039+u,333+f);
+glVertex2f (1050+u,340+f);
+glVertex2f (1057+u,346+f);
+glVertex2f (1061+u,350+f);
+glVertex2f (1070+u,359+f);
+glVertex2f (1083+u,372+f);
+glVertex2f (1085+u,386+f);
+glVertex2f (1086+u,397+f);
+glVertex2f (1086+u,406+f);
+glVertex2f (1081+u,417+f);
+glVertex2f (1075+u,425+f);
+glVertex2f (1070+u,430+f);
+glVertex2f (1063+u,436+f);
+
+        glEnd();
+        glPopMatrix();
+}
 
 
+
+void tal_cloud2()
+{
+    glPushMatrix();
+       glTranslatef(1200.0,1400.0,0);
+       glColor3f(0.45, 0.75, 0.15);
+       circle(100,60);
+       glPopMatrix();
+}
+
+void tal_cloud3()
+{
+    glPushMatrix();
+       glTranslatef(1100.0,1300.0,0);
+       glColor3f(0.45, 0.75, 0.15);
+       circle(70,50);
+       glPopMatrix();
+}
+
+void tal_cloud4()
+{
+    glPushMatrix();
+       glTranslatef(1030.0,1220.0,0);
+       glColor3f(0.45, 0.75, 0.15);
+       circle(40,30);
+       glPopMatrix();
+}
+
+void print_bitmap_string(/*void* font,*/ char* s)
+{
+
+      while (*s) {
+         glutBitmapCharacter( GLUT_BITMAP_HELVETICA_18, *s);
+         s++;
+      }
+
+}
+
+void draw_stuff()
+{
+   char* bitmap_font_names[10] = {"Hi, I am Talking Tom!"};
+
+   GLfloat x, y, ystep, yild, stroke_scale;
+
+   /* Draw the strings, according to the current mode and font. */
+   glPushMatrix();
+   glTranslatef(245,1500.0,0);
+   glColor4f(0.0, 0.0, 0.0, 0.0);
+   x = 225.0;
+   y = 70.0;
+   ystep  = 100.0;
+   yild   = 20.0;
+      glRasterPos2f(1050+u, y+1.25*yild+f);
+     print_bitmap_string(bitmap_font_names[0]);
+     glPopMatrix();
+}
+
+
+
+void talk_text()
+{
+     //glClear(GL_COLOR_BUFFER_BIT);
+   draw_stuff();
+
+
+
+
+}
+
+void sky_cloud1()
+{
+     glPushMatrix();
+       glTranslatef(250.0,2450.0,0); //Here glTranslate is used for proper positioning of the shape on the screen. Try to change the values here and see the effect
+       glBegin(GL_POLYGON);
+       //glColor3f(0.8627450980392157, 0.8627450980392157, 0.8627450980392157);
+        //glColor3f(0.88, 0.88, 0.88);
+        glColor3f(0.84, 0.84, 0.85);
+
+        glVertex2f (818,244);
+glVertex2f (826,244);
+glVertex2f (838,246);
+glVertex2f (847,250);
+glVertex2f (861,258);
+glVertex2f (870,265);
+glVertex2f (880,275);
+glVertex2f (884,283);
+glVertex2f (888,291);
+glVertex2f (890,298);
+glVertex2f (890,310);
+glVertex2f (890,318);
+glVertex2f (890,327);
+glVertex2f (886,337);
+glVertex2f (880,345);
+glVertex2f (872,352);
+glVertex2f (869,352);
+glVertex2f (869,364);
+glVertex2f (872,372);
+glVertex2f (876,379);
+glVertex2f (876,383);
+glVertex2f (876,391);
+glVertex2f (874,403);
+glVertex2f (869,412);
+glVertex2f (865,422);
+glVertex2f (857,431);
+glVertex2f (851,437);
+glVertex2f (841,441);
+glVertex2f (832,441);
+glVertex2f (822,441);
+glVertex2f (824,445);
+glVertex2f (818,455);
+glVertex2f (807,466);
+glVertex2f (799,476);
+glVertex2f (787,482);
+glVertex2f (774,487);
+glVertex2f (760,489);
+glVertex2f (751,491);
+glVertex2f (737,491);
+glVertex2f (722,491);
+glVertex2f (710,491);
+glVertex2f (706,484);
+glVertex2f (699,474);
+glVertex2f (695,472);
+glVertex2f (691,474);
+glVertex2f (683,480);
+glVertex2f (675,484);
+glVertex2f (668,484);
+glVertex2f (656,487);
+glVertex2f (643,489);
+glVertex2f (637,489);
+glVertex2f (629,489);
+glVertex2f (617,487);
+glVertex2f (610,484);
+glVertex2f (604,482);
+glVertex2f (600,478);
+glVertex2f (598,474);
+glVertex2f (594,472);
+glVertex2f (587,460);
+glVertex2f (579,468);
+glVertex2f (571,472);
+glVertex2f (565,474);
+glVertex2f (560,476);
+glVertex2f (552,478);
+glVertex2f (546,478);
+glVertex2f (540,478);
+glVertex2f (532,478);
+glVertex2f (527,478);
+glVertex2f (513,478);
+glVertex2f (507,476);
+glVertex2f (502,474);
+glVertex2f (490,468);
+glVertex2f (484,462);
+glVertex2f (478,453);
+glVertex2f (478,445);
+glVertex2f (473,447);
+glVertex2f (459,449);
+glVertex2f (449,453);
+glVertex2f (440,457);
+glVertex2f (432,457);
+glVertex2f (424,457);
+glVertex2f (407,457);
+glVertex2f (397,459);
+glVertex2f (388,457);
+glVertex2f (386,457);
+glVertex2f (370,453);
+glVertex2f (363,445);
+glVertex2f (355,439);
+glVertex2f (347,431);
+glVertex2f (339,418);
+glVertex2f (339,414);
+glVertex2f (336,406);
+glVertex2f (334,399);
+glVertex2f (334,391);
+glVertex2f (330,379);
+glVertex2f (328,370);
+glVertex2f (320,370);
+glVertex2f (312,372);
+glVertex2f (305,368);
+glVertex2f (293,360);
+glVertex2f (289,360);
+glVertex2f (283,354);
+glVertex2f (278,348);
+glVertex2f (272,343);
+glVertex2f (266,331);
+glVertex2f (266,323);
+glVertex2f (266,314);
+glVertex2f (270,306);
+glVertex2f (278,300);
+glVertex2f (289,298);
+glVertex2f (301,294);
+glVertex2f (308,292);
+glVertex2f (316,289);
+glVertex2f (316,287);
+glVertex2f (305,281);
+glVertex2f (297,275);
+glVertex2f (291,265);
+glVertex2f (287,258);
+glVertex2f (287,244);
+glVertex2f (287,240);
+glVertex2f (289,233);
+glVertex2f (297,225);
+glVertex2f (303,217);
+glVertex2f (312,211);
+glVertex2f (318,209);
+glVertex2f (330,209);
+glVertex2f (339,209);
+glVertex2f (351,209);
+glVertex2f (351,209);
+glVertex2f (351,202);
+glVertex2f (351,186);
+glVertex2f (361,175);
+glVertex2f (366,173);
+glVertex2f (386,165);
+glVertex2f (401,161);
+glVertex2f (409,159);
+glVertex2f (424,159);
+glVertex2f (430,159);
+glVertex2f (440,159);
+glVertex2f (448,159);
+glVertex2f (455,159);
+glVertex2f (467,163);
+glVertex2f (475,167);
+glVertex2f (488,179);
+glVertex2f (496,190);
+glVertex2f (505,171);
+glVertex2f (517,163);
+glVertex2f (525,155);
+glVertex2f (536,146);
+glVertex2f (548,142);
+glVertex2f (556,140);
+glVertex2f (571,136);
+glVertex2f (587,136);
+glVertex2f (598,136);
+glVertex2f (610,136);
+glVertex2f (625,142);
+glVertex2f (635,146);
+glVertex2f (646,151);
+glVertex2f (654,159);
+glVertex2f (658,163);
+glVertex2f (662,169);
+glVertex2f (668,177);
+glVertex2f (672,182);
+glVertex2f (675,188);
+glVertex2f (679,198);
+glVertex2f (683,190);
+glVertex2f (691,188);
+glVertex2f (701,182);
+glVertex2f (710,182);
+glVertex2f (724,182);
+glVertex2f (737,182);
+glVertex2f (745,182);
+glVertex2f (757,182);
+glVertex2f (764,186);
+glVertex2f (776,190);
+glVertex2f (780,194);
+glVertex2f (787,202);
+glVertex2f (793,209);
+glVertex2f (795,215);
+glVertex2f (799,225);
+glVertex2f (807,236);
+glVertex2f (811,242);
+
+
+
+        glEnd();
+        glPopMatrix();
+}
+void sky_cloud2()
+{
+     glPushMatrix();
+       glTranslatef(850.0,2450.0,0); //Here glTranslate is used for proper positioning of the shape on the screen. Try to change the values here and see the effect
+       glBegin(GL_POLYGON);
+       //glColor3f(0.8627450980392157, 0.8627450980392157, 0.8627450980392157);
+        //glColor3f(0.88, 0.88, 0.88);
+        glColor3f(0.83529411764705882352941176470588, 0.83529411764705882352941176470588, 0.84705882352941176470588235294118);
+
+glVertex2f (729,240);
+glVertex2f (741,240);
+glVertex2f (753,250);
+glVertex2f (760,260);
+glVertex2f (764,267);
+glVertex2f (768,275);
+glVertex2f (772,287);
+glVertex2f (774,292);
+glVertex2f (774,302);
+glVertex2f (774,314);
+glVertex2f (770,325);
+glVertex2f (766,333);
+glVertex2f (760,337);
+glVertex2f (755,339);
+glVertex2f (757,345);
+glVertex2f (760,356);
+glVertex2f (764,368);
+glVertex2f (766,375);
+glVertex2f (766,387);
+glVertex2f (762,399);
+glVertex2f (757,406);
+glVertex2f (753,414);
+glVertex2f (745,418);
+glVertex2f (733,418);
+glVertex2f (728,418);
+glVertex2f (728,426);
+glVertex2f (728,431);
+glVertex2f (728,443);
+glVertex2f (724,451);
+glVertex2f (716,459);
+glVertex2f (706,464);
+glVertex2f (699,468);
+glVertex2f (693,468);
+glVertex2f (687,468);
+glVertex2f (672,468);
+glVertex2f (664,468);
+glVertex2f (654,468);
+glVertex2f (641,468);
+glVertex2f (629,468);
+glVertex2f (612,460);
+glVertex2f (602,457);
+glVertex2f (594,449);
+glVertex2f (594,449);
+glVertex2f (583,455);
+glVertex2f (571,459);
+glVertex2f (563,459);
+glVertex2f (550,459);
+glVertex2f (540,459);
+glVertex2f (529,455);
+glVertex2f (517,447);
+glVertex2f (509,437);
+glVertex2f (505,430);
+glVertex2f (500,420);
+glVertex2f (496,420);
+glVertex2f (486,420);
+glVertex2f (480,420);
+glVertex2f (473,420);
+glVertex2f (463,414);
+glVertex2f (451,401);
+glVertex2f (449,395);
+glVertex2f (446,385);
+glVertex2f (446,374);
+glVertex2f (446,360);
+glVertex2f (449,352);
+glVertex2f (453,347);
+glVertex2f (453,345);
+glVertex2f (448,339);
+glVertex2f (442,333);
+glVertex2f (440,327);
+glVertex2f (434,323);
+glVertex2f (424,314);
+glVertex2f (419,302);
+glVertex2f (420,294);
+glVertex2f (428,283);
+glVertex2f (438,275);
+glVertex2f (446,269);
+glVertex2f (453,260);
+glVertex2f (451,256);
+glVertex2f (442,244);
+glVertex2f (432,238);
+glVertex2f (432,233);
+glVertex2f (432,217);
+glVertex2f (440,209);
+glVertex2f (455,200);
+glVertex2f (465,190);
+glVertex2f (467,190);
+glVertex2f (478,186);
+glVertex2f (490,186);
+glVertex2f (498,190);
+glVertex2f (505,194);
+glVertex2f (509,192);
+glVertex2f (519,180);
+glVertex2f (529,175);
+glVertex2f (534,169);
+glVertex2f (548,161);
+glVertex2f (563,159);
+glVertex2f (579,167);
+glVertex2f (587,173);
+glVertex2f (596,182);
+glVertex2f (604,194);
+glVertex2f (606,198);
+glVertex2f (610,206);
+glVertex2f (619,207);
+glVertex2f (637,202);
+glVertex2f (652,198);
+glVertex2f (660,198);
+glVertex2f (672,196);
+glVertex2f (683,196);
+glVertex2f (693,196);
+glVertex2f (702,198);
+glVertex2f (714,206);
+glVertex2f (718,211);
+glVertex2f (722,221);
+glVertex2f (726,233);
+
+
+
+
+
+        glEnd();
+        glPopMatrix();
+}
+
+void sky_cloud3()
+{
+     glPushMatrix();
+       glTranslatef(1400.0,2450.0,0); //Here glTranslate is used for proper positioning of the shape on the screen. Try to change the values here and see the effect
+       glBegin(GL_POLYGON);
+       //glColor3f(0.8627450980392157, 0.8627450980392157, 0.8627450980392157);
+        //glColor3f(0.88, 0.88, 0.88);
+        //glColor3f(0.45, 0.75, 0.15);
+     glColor3f(0.84, 0.84, 0.85);
+        glVertex2f (818,244);
+glVertex2f (826,244);
+glVertex2f (838,246);
+glVertex2f (847,250);
+glVertex2f (861,258);
+glVertex2f (870,265);
+glVertex2f (880,275);
+glVertex2f (884,283);
+glVertex2f (888,291);
+glVertex2f (890,298);
+glVertex2f (890,310);
+glVertex2f (890,318);
+glVertex2f (890,327);
+glVertex2f (886,337);
+glVertex2f (880,345);
+glVertex2f (872,352);
+glVertex2f (869,352);
+glVertex2f (869,364);
+glVertex2f (872,372);
+glVertex2f (876,379);
+glVertex2f (876,383);
+glVertex2f (876,391);
+glVertex2f (874,403);
+glVertex2f (869,412);
+glVertex2f (865,422);
+glVertex2f (857,431);
+glVertex2f (851,437);
+glVertex2f (841,441);
+glVertex2f (832,441);
+glVertex2f (822,441);
+glVertex2f (824,445);
+glVertex2f (818,455);
+glVertex2f (807,466);
+glVertex2f (799,476);
+glVertex2f (787,482);
+glVertex2f (774,487);
+glVertex2f (760,489);
+glVertex2f (751,491);
+glVertex2f (737,491);
+glVertex2f (722,491);
+glVertex2f (710,491);
+glVertex2f (706,484);
+glVertex2f (699,474);
+glVertex2f (695,472);
+glVertex2f (691,474);
+glVertex2f (683,480);
+glVertex2f (675,484);
+glVertex2f (668,484);
+glVertex2f (656,487);
+glVertex2f (643,489);
+glVertex2f (637,489);
+glVertex2f (629,489);
+glVertex2f (617,487);
+glVertex2f (610,484);
+glVertex2f (604,482);
+glVertex2f (600,478);
+glVertex2f (598,474);
+glVertex2f (594,472);
+glVertex2f (587,460);
+glVertex2f (579,468);
+glVertex2f (571,472);
+glVertex2f (565,474);
+glVertex2f (560,476);
+glVertex2f (552,478);
+glVertex2f (546,478);
+glVertex2f (540,478);
+glVertex2f (532,478);
+glVertex2f (527,478);
+glVertex2f (513,478);
+glVertex2f (507,476);
+glVertex2f (502,474);
+glVertex2f (490,468);
+glVertex2f (484,462);
+glVertex2f (478,453);
+glVertex2f (478,445);
+glVertex2f (473,447);
+glVertex2f (459,449);
+glVertex2f (449,453);
+glVertex2f (440,457);
+glVertex2f (432,457);
+glVertex2f (424,457);
+glVertex2f (407,457);
+glVertex2f (397,459);
+glVertex2f (388,457);
+glVertex2f (386,457);
+glVertex2f (370,453);
+glVertex2f (363,445);
+glVertex2f (355,439);
+glVertex2f (347,431);
+glVertex2f (339,418);
+glVertex2f (339,414);
+glVertex2f (336,406);
+glVertex2f (334,399);
+glVertex2f (334,391);
+glVertex2f (330,379);
+glVertex2f (328,370);
+glVertex2f (320,370);
+glVertex2f (312,372);
+glVertex2f (305,368);
+glVertex2f (293,360);
+glVertex2f (289,360);
+glVertex2f (283,354);
+glVertex2f (278,348);
+glVertex2f (272,343);
+glVertex2f (266,331);
+glVertex2f (266,323);
+glVertex2f (266,314);
+glVertex2f (270,306);
+glVertex2f (278,300);
+glVertex2f (289,298);
+glVertex2f (301,294);
+glVertex2f (308,292);
+glVertex2f (316,289);
+glVertex2f (316,287);
+glVertex2f (305,281);
+glVertex2f (297,275);
+glVertex2f (291,265);
+glVertex2f (287,258);
+glVertex2f (287,244);
+glVertex2f (287,240);
+glVertex2f (289,233);
+glVertex2f (297,225);
+glVertex2f (303,217);
+glVertex2f (312,211);
+glVertex2f (318,209);
+glVertex2f (330,209);
+glVertex2f (339,209);
+glVertex2f (351,209);
+glVertex2f (351,209);
+glVertex2f (351,202);
+glVertex2f (351,186);
+glVertex2f (361,175);
+glVertex2f (366,173);
+glVertex2f (386,165);
+glVertex2f (401,161);
+glVertex2f (409,159);
+glVertex2f (424,159);
+glVertex2f (430,159);
+glVertex2f (440,159);
+glVertex2f (448,159);
+glVertex2f (455,159);
+glVertex2f (467,163);
+glVertex2f (475,167);
+glVertex2f (488,179);
+glVertex2f (496,190);
+glVertex2f (505,171);
+glVertex2f (517,163);
+glVertex2f (525,155);
+glVertex2f (536,146);
+glVertex2f (548,142);
+glVertex2f (556,140);
+glVertex2f (571,136);
+glVertex2f (587,136);
+glVertex2f (598,136);
+glVertex2f (610,136);
+glVertex2f (625,142);
+glVertex2f (635,146);
+glVertex2f (646,151);
+glVertex2f (654,159);
+glVertex2f (658,163);
+glVertex2f (662,169);
+glVertex2f (668,177);
+glVertex2f (672,182);
+glVertex2f (675,188);
+glVertex2f (679,198);
+glVertex2f (683,190);
+glVertex2f (691,188);
+glVertex2f (701,182);
+glVertex2f (710,182);
+glVertex2f (724,182);
+glVertex2f (737,182);
+glVertex2f (745,182);
+glVertex2f (757,182);
+glVertex2f (764,186);
+glVertex2f (776,190);
+glVertex2f (780,194);
+glVertex2f (787,202);
+glVertex2f (793,209);
+glVertex2f (795,215);
+glVertex2f (799,225);
+glVertex2f (807,236);
+glVertex2f (811,242);
+
+
+
+        glEnd();
+        glPopMatrix();
+}
+
+
+void sky_cloud4()
+{
+    glPushMatrix();
+    glTranslatef(1900.0,2450.0,0); //Here glTranslate is used for proper positioning of the shape on the screen. Try to change the values here and see the effect
+    glBegin(GL_POLYGON);
+    glColor3f(0.83529411764705882352941176470588, 0.83529411764705882352941176470588, 0.84705882352941176470588235294118);
+    glVertex2f (729,240);
+    glVertex2f (741,240);
+    glVertex2f (753,250);
+    glVertex2f (760,260);
+    glVertex2f (764,267);
+    glVertex2f (768,275);
+    glVertex2f (772,287);
+    glVertex2f (774,292);
+    glVertex2f (774,302);
+    glVertex2f (774,314);
+    glVertex2f (770,325);
+    glVertex2f (766,333);
+    glVertex2f (760,337);
+    glVertex2f (755,339);
+    glVertex2f (757,345);
+    glVertex2f (760,356);
+    glVertex2f (764,368);
+    glVertex2f (766,375);
+    glVertex2f (766,387);
+    glVertex2f (762,399);
+    glVertex2f (757,406);
+    glVertex2f (753,414);
+    glVertex2f (745,418);
+    glVertex2f (733,418);
+    glVertex2f (728,418);
+    glVertex2f (728,426);
+    glVertex2f (728,431);
+    glVertex2f (728,443);
+    glVertex2f (724,451);
+    glVertex2f (716,459);
+    glVertex2f (706,464);
+    glVertex2f (699,468);
+    glVertex2f (693,468);
+    glVertex2f (687,468);
+    glVertex2f (672,468);
+    glVertex2f (664,468);
+    glVertex2f (654,468);
+    glVertex2f (641,468);
+    glVertex2f (629,468);
+    glVertex2f (612,460);
+    glVertex2f (602,457);
+    glVertex2f (594,449);
+    glVertex2f (594,449);
+    glVertex2f (583,455);
+    glVertex2f (571,459);
+    glVertex2f (563,459);
+    glVertex2f (550,459);
+    glVertex2f (540,459);
+    glVertex2f (529,455);
+    glVertex2f (517,447);
+    glVertex2f (509,437);
+    glVertex2f (505,430);
+    glVertex2f (500,420);
+    glVertex2f (496,420);
+    glVertex2f (486,420);
+    glVertex2f (480,420);
+    glVertex2f (473,420);
+    glVertex2f (463,414);
+    glVertex2f (451,401);
+    glVertex2f (449,395);
+    glVertex2f (446,385);
+    glVertex2f (446,374);
+    glVertex2f (446,360);
+    glVertex2f (449,352);
+    glVertex2f (453,347);
+    glVertex2f (453,345);
+    glVertex2f (448,339);
+    glVertex2f (442,333);
+    glVertex2f (440,327);
+    glVertex2f (434,323);
+    glVertex2f (424,314);
+    glVertex2f (419,302);
+    glVertex2f (420,294);
+    glVertex2f (428,283);
+    glVertex2f (438,275);
+    glVertex2f (446,269);
+    glVertex2f (453,260);
+    glVertex2f (451,256);
+    glVertex2f (442,244);
+    glVertex2f (432,238);
+    glVertex2f (432,233);
+    glVertex2f (432,217);
+    glVertex2f (440,209);
+    glVertex2f (455,200);
+    glVertex2f (465,190);
+    glVertex2f (467,190);
+    glVertex2f (478,186);
+    glVertex2f (490,186);
+    glVertex2f (498,190);
+    glVertex2f (505,194);
+    glVertex2f (509,192);
+    glVertex2f (519,180);
+    glVertex2f (529,175);
+    glVertex2f (534,169);
+    glVertex2f (548,161);
+    glVertex2f (563,159);
+    glVertex2f (579,167);
+    glVertex2f (587,173);
+    glVertex2f (596,182);
+    glVertex2f (604,194);
+    glVertex2f (606,198);
+    glVertex2f (610,206);
+    glVertex2f (619,207);
+    glVertex2f (637,202);
+    glVertex2f (652,198);
+    glVertex2f (660,198);
+    glVertex2f (672,196);
+    glVertex2f (683,196);
+    glVertex2f (693,196);
+    glVertex2f (702,198);
+    glVertex2f (714,206);
+    glVertex2f (718,211);
+    glVertex2f (722,221);
+    glVertex2f (726,233);
+    glEnd();
+    glPopMatrix();
+}
+
+
+void island()
+{
+
+    glPushMatrix();
+       glTranslatef(2570,1120.0,0);
+       glColor3f(0.9607843137254902, 0.7411764705882353, 0.1215686274509804);
+       circle2(350,670);
+       glPopMatrix();
+}
+
+void island_land()
+{
+    glPushMatrix();
+       glTranslatef(1950.0,550.0,0); //Here glTranslate is used for proper positioning of the shape on the screen. Try to change the values here and see the effect
+       glBegin(GL_POLYGON);
+       //glColor3f(0.8627450980392157, 0.8627450980392157, 0.8627450980392157);
+        glColor3f(0, 0.4117647058823529, 0.5803921568627451);
+
+        glVertex2f(0,800);
+        glVertex2f(0,0);
+        glVertex2f(1000,0);
+        glVertex2f(1000,800);
+
+
+
+        glEnd();
+        glPopMatrix();
+}
 void myDisplay()
 {
     glClear(GL_COLOR_BUFFER_BIT);
@@ -3255,9 +4293,13 @@ void myDisplay()
 
 
 glColor3f(0.2f, 0.0f, 0.74f);
-land();
+
 water();
 sky();
+
+island();
+island_land();
+land();
 left_hand();
 outer_sceleton();
 
@@ -3288,59 +4330,16 @@ left_spike2();
 right_spike1();
 right_spike2();
 ball();
-//full_body();
-//f_head();
- //f_tail();
- //left_ear();
 
-      //  //CAR BODY
-
-      // glPushMatrix();
-      // glTranslatef(-5.0,-5.0,0); //Here glTranslate is used for proper positioning of the shape on the screen. Try to change the values here and see the effect
-      // glBegin(GL_POLYGON);
-      // glColor3f(0.2f, 0.0f, 0.74f);
-      // glVertex2f(0.0f+u, 0.0f+f);// u and f added with x and y values respectively to control the movement in respective directions
-      // glColor3f(0.5f, 0.0f, 0.92f);
-      // glVertex2f( 12.0f+u, 0.0+f);
-      // glColor3f(0.3f, 0.02f, 0.55f);
-      // glVertex2f( 12.0+u,  6.0f+f);
-      // glColor3f(0.1f, 0.22f, 0.44f);
-      // glVertex2f( 0.0f+u,  6.0f+f);
-      // glEnd();
-      // glPopMatrix();
-
-      // //CAR HEAD
-
-      // glPushMatrix();
-      // glTranslatef(-6.0,-2.0,0);
-      // glBegin(GL_POLYGON);
-      // glColor3f(0.9f, 0.0f, 0.3f);
-      // glVertex2f(10.0f+u, 7.0f);
-      // glColor3f(0.9f, 0.0f, 0.92f);
-      // glVertex2f(4.0f+u, 7.0f);
-      // glColor3f(0.7f, 0.02f, 0.55f);
-      // glVertex2f( 3.0+u,  3.0f);
-      // glColor3f(0.1f, 0.22f, 0.44f);
-      // glVertex2f( 11.0f+u,  3.0f);
-      // glEnd();
-      // glPopMatrix();
-
-
-      // //Wheels
-
-      // glPushMatrix();
-      // glTranslatef(-1.5,-4.0,0);
-      // glColor3f(1.0, 0.2, 0.5);
-      // circle(2,2);
-      // glPopMatrix();
-
-      // glPushMatrix();
-      // glTranslatef(3.5,-4.0,0);
-      // glColor3f(1.0, 0.2, 0.5);
-      // circle(2,2);
-      // glPopMatrix();
-
-
+tal_cloud();
+tal_cloud2();
+tal_cloud3();
+tal_cloud4();
+talk_text();
+sky_cloud1();
+sky_cloud2();
+sky_cloud3();
+sky_cloud4();
 
     glFlush();
 }

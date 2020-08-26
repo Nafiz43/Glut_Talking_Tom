@@ -237,8 +237,19 @@
 	<GL/glut.h>
 	<math.h>
 
-1597300396 source:c:\users\nafiz imtiaz khan\dropbox\my pc (desktop-mqjqtaf)\documents\term-2\graphics\tom\main.cpp
+1598335900 source:c:\users\nafiz imtiaz khan\dropbox\my pc (desktop-mqjqtaf)\documents\term-2\graphics\tom\main.cpp
 	<windows.h>
 	<GL/glut.h>
 	<math.h>
+	<stdio.h>
+
+1341010376 c:\program files (x86)\codeblocks\mingw\include\stdio.h
+	<_mingw.h>
+	<stddef.h>
+	<stdarg.h>
+	<sys/types.h>
+
+1341010380 c:\program files (x86)\codeblocks\mingw\include\sys\types.h
+	<_mingw.h>
+	<stddef.h>
 
