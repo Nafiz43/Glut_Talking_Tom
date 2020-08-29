@@ -3253,7 +3253,7 @@ void tal_cloud()
        glBegin(GL_POLYGON);
        //glColor3f(0.8627450980392157, 0.8627450980392157, 0.8627450980392157);
         //glColor3f(0.88, 0.88, 0.88);
-        glColor3f(0.45, 0.75, 0.15);
+        glColor3f(0.84, 0.84, 0.85);
 
  glVertex2f (1050+u,441+f);
 glVertex2f (1053+u,447+f);
@@ -3541,7 +3541,7 @@ void tal_cloud2()
 {
     glPushMatrix();
        glTranslatef(1200.0,1400.0,0);
-       glColor3f(0.45, 0.75, 0.15);
+       glColor3f(0.84, 0.84, 0.85);
        circle(100,60);
        glPopMatrix();
 }
@@ -3550,7 +3550,7 @@ void tal_cloud3()
 {
     glPushMatrix();
        glTranslatef(1100.0,1300.0,0);
-       glColor3f(0.45, 0.75, 0.15);
+       glColor3f(0.84, 0.84, 0.85);
        circle(70,50);
        glPopMatrix();
 }
@@ -3559,7 +3559,7 @@ void tal_cloud4()
 {
     glPushMatrix();
        glTranslatef(1030.0,1220.0,0);
-       glColor3f(0.45, 0.75, 0.15);
+       glColor3f(0.84, 0.84, 0.85);
        circle(40,30);
        glPopMatrix();
 }
@@ -3576,13 +3576,13 @@ void print_bitmap_string(/*void* font,*/ char* s)
 
 void draw_stuff()
 {
-   char* bitmap_font_names[10] = {"Hi, I am Talking Tom!"};
+   char* bitmap_font_names[10] = {"Hi, I am Talking Tom! How are you all doing?"};
 
    GLfloat x, y, ystep, yild, stroke_scale;
 
    /* Draw the strings, according to the current mode and font. */
    glPushMatrix();
-   glTranslatef(245,1500.0,0);
+   glTranslatef(120,1508.0,0);
    glColor4f(0.0, 0.0, 0.0, 0.0);
    x = 225.0;
    y = 70.0;
@@ -4263,18 +4263,20 @@ void island()
 
     glPushMatrix();
        glTranslatef(2570,1120.0,0);
-       glColor3f(0.9607843137254902, 0.7411764705882353, 0.1215686274509804);
-       circle2(350,670);
+       //glColor3f(0.1490196078431373, 0.4156862745098039, 0.1803921568627451);
+       glColor3f(0.45, 0.75, 0.15);
+       circle2(250,570);
        glPopMatrix();
 }
 
-void island_land()
+void island_land() // overlapped with water
 {
     glPushMatrix();
        glTranslatef(1950.0,550.0,0); //Here glTranslate is used for proper positioning of the shape on the screen. Try to change the values here and see the effect
        glBegin(GL_POLYGON);
        //glColor3f(0.8627450980392157, 0.8627450980392157, 0.8627450980392157);
         glColor3f(0, 0.4117647058823529, 0.5803921568627451);
+
 
         glVertex2f(0,800);
         glVertex2f(0,0);
@@ -4286,6 +4288,267 @@ void island_land()
         glEnd();
         glPopMatrix();
 }
+
+
+
+void island_tree()
+{
+    glPushMatrix();
+    glTranslatef(2050.0,1300.0,0); //Here glTranslate is used for proper positioning of the shape on the screen. Try to change the values here and see the effect
+    glBegin(GL_POLYGON);
+    // glColor3f(0.45, 0.75, 0.15);
+
+    glColor3f(0.1490196078431373, 0.4156862745098039, 0.1803921568627451);
+   glVertex2f (382,755);
+glVertex2f (395,755);
+glVertex2f (410,755);
+glVertex2f (429,757);
+glVertex2f (445,757);
+glVertex2f (464,757);
+glVertex2f (480,754);
+glVertex2f (499,747);
+glVertex2f (514,745);
+glVertex2f (503,759);
+glVertex2f (492,766);
+glVertex2f (482,775);
+glVertex2f (472,780);
+glVertex2f (457,790);
+glVertex2f (441,799);
+glVertex2f (422,802);
+glVertex2f (405,803);
+glVertex2f (392,805);
+glVertex2f (389,813);
+glVertex2f (392,824);
+glVertex2f (403,827);
+glVertex2f (420,828);
+glVertex2f (444,831);
+glVertex2f (468,831);
+glVertex2f (494,831);
+glVertex2f (515,831);
+glVertex2f (543,815);
+glVertex2f (569,800);
+glVertex2f (585,790);
+glVertex2f (598,790);
+glVertex2f (592,806);
+glVertex2f (583,816);
+glVertex2f (572,829);
+glVertex2f (563,844);
+glVertex2f (553,858);
+glVertex2f (541,871);
+glVertex2f (532,880);
+glVertex2f (515,886);
+glVertex2f (491,893);
+glVertex2f (468,900);
+glVertex2f (447,901);
+glVertex2f (431,901);
+glVertex2f (428,912);
+glVertex2f (434,915);
+glVertex2f (444,916);
+glVertex2f (456,916);
+glVertex2f (471,916);
+glVertex2f (482,916);
+glVertex2f (494,912);
+glVertex2f (510,904);
+glVertex2f (524,902);
+glVertex2f (532,899);
+glVertex2f (540,896);
+glVertex2f (548,887);
+glVertex2f (562,880);
+glVertex2f (569,880);
+glVertex2f (566,890);
+glVertex2f (559,896);
+glVertex2f (550,904);
+glVertex2f (543,915);
+glVertex2f (533,925);
+glVertex2f (521,936);
+glVertex2f (509,947);
+glVertex2f (492,953);
+glVertex2f (476,955);
+glVertex2f (405,959);
+glVertex2f (410,979);
+glVertex2f (425,983);
+glVertex2f (434,986);
+glVertex2f (445,986);
+glVertex2f (459,986);
+glVertex2f (476,986);
+glVertex2f (491,982);
+glVertex2f (486,1001);
+glVertex2f (473,1011);
+glVertex2f (453,1015);
+glVertex2f (434,1016);
+glVertex2f (409,1018);
+glVertex2f (425,1028);
+glVertex2f (436,1034);
+glVertex2f (445,1040);
+glVertex2f (456,1046);
+glVertex2f (467,1053);
+glVertex2f (470,1060);
+glVertex2f (417,1063);
+glVertex2f (392,1028);
+glVertex2f (378,1030);
+glVertex2f (352,1053);
+glVertex2f (309,1047);
+glVertex2f (347,1025);
+glVertex2f (348,1012);
+glVertex2f (331,1012);
+glVertex2f (284,1011);
+glVertex2f (270,1005);
+glVertex2f (256,998);
+glVertex2f (242,986);
+glVertex2f (229,973);
+glVertex2f (222,962);
+glVertex2f (242,966);
+glVertex2f (260,976);
+glVertex2f (286,978);
+glVertex2f (309,979);
+glVertex2f (319,970);
+glVertex2f (319,960);
+glVertex2f (291,960);
+glVertex2f (264,955);
+glVertex2f (235,953);
+glVertex2f (219,946);
+glVertex2f (205,939);
+glVertex2f (190,925);
+glVertex2f (177,912);
+glVertex2f (170,899);
+glVertex2f (160,885);
+glVertex2f (152,873);
+glVertex2f (176,885);
+glVertex2f (198,899);
+glVertex2f (215,904);
+glVertex2f (237,906);
+glVertex2f (321,912);
+glVertex2f (321,900);
+glVertex2f (286,897);
+glVertex2f (260,896);
+glVertex2f (238,886);
+glVertex2f (224,880);
+glVertex2f (207,877);
+glVertex2f (189,866);
+glVertex2f (180,852);
+glVertex2f (168,841);
+glVertex2f (155,831);
+glVertex2f (145,817);
+glVertex2f (138,805);
+glVertex2f (135,785);
+glVertex2f (151,793);
+glVertex2f (165,806);
+glVertex2f (184,822);
+glVertex2f (196,828);
+glVertex2f (218,834);
+glVertex2f (241,835);
+glVertex2f (268,835);
+glVertex2f (289,834);
+glVertex2f (314,816);
+glVertex2f (310,809);
+glVertex2f (283,809);
+glVertex2f (256,803);
+glVertex2f (238,786);
+glVertex2f (228,768);
+glVertex2f (230,757);
+glVertex2f (256,762);
+glVertex2f (271,763);
+glVertex2f (303,766);
+glVertex2f (324,759);
+glVertex2f (376,757);
+
+    glEnd();
+    glPopMatrix();
+}
+
+
+void island_tree_struct()
+{
+    glPushMatrix();
+    glTranslatef(1900.0,1450.0,0); //Here glTranslate is used for proper positioning of the shape on the screen. Try to change the values here and see the effect
+    glBegin(GL_POLYGON);
+    glColor3f(0.54117647058823529411764705882353, 0.25490196078431372549019607843137, 0);
+
+glVertex2f (695,151);
+glVertex2f (675,169);
+glVertex2f (656,184);
+glVertex2f (629,209);
+glVertex2f (594,254);
+glVertex2f (569,296);
+glVertex2f (546,335);
+glVertex2f (532,352);
+glVertex2f (465,356);
+glVertex2f (494,321);
+glVertex2f (509,298);
+glVertex2f (523,269);
+glVertex2f (544,244);
+glVertex2f (563,223);
+glVertex2f (589,204);
+glVertex2f (614,175);
+glVertex2f (635,148);
+glVertex2f (668,144);
+
+
+
+    glEnd();
+    glPopMatrix();
+}
+
+
+void island_tree_struct_top()
+{
+    glPushMatrix();
+    glTranslatef(1900.0,1450.0,0); //Here glTranslate is used for proper positioning of the shape on the screen. Try to change the values here and see the effect
+    glBegin(GL_POLYGON);
+     glColor3f(0.54117647058823529411764705882353, 0.25490196078431372549019607843137, 0);
+
+
+glVertex2f (535,350);
+glVertex2f (527,370);
+glVertex2f (521,393);
+glVertex2f (521,408);
+glVertex2f (521,426);
+glVertex2f (521,445);
+glVertex2f (521,466);
+glVertex2f (531,499);
+glVertex2f (534,518);
+glVertex2f (534,536);
+glVertex2f (538,559);
+glVertex2f (538,578);
+glVertex2f (538,594);
+glVertex2f (540,615);
+glVertex2f (502,617);
+glVertex2f (459,621);
+glVertex2f (457,605);
+glVertex2f (457,590);
+glVertex2f (457,576);
+glVertex2f (457,567);
+glVertex2f (457,534);
+glVertex2f (455,509);
+glVertex2f (455,484);
+glVertex2f (455,459);
+glVertex2f (455,435);
+glVertex2f (455,410);
+glVertex2f (457,389);
+glVertex2f (457,362);
+glVertex2f (469,352);
+glVertex2f (490,352);
+glVertex2f (511,350);
+
+
+
+    glEnd();
+    glPopMatrix();
+}
+
+
+void forest()
+{
+    glPushMatrix();
+    glTranslatef(0.0,0.0,0); //Here glTranslate is used for proper positioning of the shape on the screen. Try to change the values here and see the effect
+    glBegin(GL_POLYGON);
+     glColor3f(0.54117647058823529411764705882353, 0.25490196078431372549019607843137, 0);
+
+    glEnd();
+    glPopMatrix();
+}
+
+
 void myDisplay()
 {
     glClear(GL_COLOR_BUFFER_BIT);
@@ -4299,6 +4562,12 @@ sky();
 
 island();
 island_land();
+
+island_tree();
+island_tree_struct();
+island_tree_struct_top();
+
+
 land();
 left_hand();
 outer_sceleton();
@@ -4340,6 +4609,8 @@ sky_cloud1();
 sky_cloud2();
 sky_cloud3();
 sky_cloud4();
+forest();
+
 
     glFlush();
 }
@@ -4371,7 +4642,7 @@ void spe_key(int key, int x, int y)
 
 int main()
 {
-    glutInitWindowSize(1200,650);
+    glutInitWindowSize(1250,650);
     glutInitWindowPosition(50,10);
     glutCreateWindow("Talking Tom");
     init();
