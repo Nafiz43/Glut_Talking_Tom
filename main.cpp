@@ -2224,7 +2224,9 @@ void mouth()
 {
 
     glPushMatrix();
-     // glTranslatef(100.0,350.0,0); //Here glTranslate is used for proper positioning of the shape on the screen. Try to change the values here and see the effect
+
+    glRotatef(spin, 0.0, 1.0, 0.0);
+     // glTranslate(100.0,350.0,0); //Here glTranslate is used for proper positioning of the shape on the screen. Try to change the values here and see the effect
       glBegin(GL_POLYGON);
       glColor3f(0.8627450980392157, 0.8627450980392157, 0.8627450980392157);
 
@@ -4321,6 +4323,15 @@ glVertex2f(1047,645);
     glEnd();
     glPopMatrix();
 }
+void spinDisplay_left(void)
+{
+   spin = spin + 0.02; //to increase or decrease speed change the value added to spin
+   if (spin > 6.0)
+      spin = 0;
+   //the above if block is given only for clear understanding, otherwise 370 degrees is the same as 10 degrees
+
+   glutPostRedisplay(); //calls the display function again
+}
 
 
 void surface_ball()
@@ -4431,6 +4442,7 @@ void spe_key(int key, int x, int y)
             flag=1;
           //  glutIdleFunc(spinDisplay_left);
             PlaySound("nafiz_welcome.wav", NULL, SND_FILENAME| SND_ASYNC);
+            glutIdleFunc(spinDisplay_left);
 
 
            // bitmap_font_names={'Welcome'};
@@ -4440,6 +4452,7 @@ void spe_key(int key, int x, int y)
             sound=2;
             flag=2;
             PlaySound("nafiz_hi.wav", NULL, SND_FILENAME| SND_ASYNC);
+            glutIdleFunc(spinDisplay_left);
             //bitmap_font_names={'Hi'};
             break;
 
@@ -4467,6 +4480,7 @@ void my_mouse(int button, int state, int x, int y)
             PlaySound("background2.wav", NULL, SND_FILENAME| SND_ASYNC);
             cloud_actifvation=0;
             flag=0;
+            glutIdleFunc(NULL);
 
             //glutIdleFunc(spinDisplay_left);//then call the spinDisplay_left func to spin in left direction
          break;
@@ -4509,18 +4523,19 @@ void my_mouse(int button, int state, int x, int y)
 
 int main()
 {
-    if(sound==1)
-    {
-        PlaySound("welcome.wav", NULL, SND_FILENAME| SND_ASYNC);
-    }
-    else if(sound==2)
-    {
-        PlaySound("hi.wav", NULL, SND_FILENAME| SND_ASYNC);
-    }
-    else
-    {
-        PlaySound("background.wav", NULL, SND_FILENAME| SND_ASYNC);
-    }
+    // if(sound==1)
+    // {
+    //     PlaySound("welcome.wav", NULL, SND_FILENAME| SND_ASYNC);
+    // }
+    // else if(sound==2)
+    // {
+    //     PlaySound("hi.wav", NULL, SND_FILENAME| SND_ASYNC);
+    // }
+    // else
+    // {
+    //     
+    // }
+    PlaySound("background.wav", NULL, SND_FILENAME| SND_ASYNC);
 
     //PlaySound("welcome.wav", NULL, SND_FILENAME| SND_ASYNC);
     glutInitWindowSize(1250,650);
