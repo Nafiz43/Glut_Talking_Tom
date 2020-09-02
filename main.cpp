@@ -4464,7 +4464,7 @@ void my_mouse(int button, int state, int x, int y)
    switch (button) {
       case GLUT_LEFT_BUTTON:
          if (state == GLUT_DOWN)//mouse press detected
-            PlaySound("background.wav", NULL, SND_FILENAME| SND_ASYNC);
+            PlaySound("background2.wav", NULL, SND_FILENAME| SND_ASYNC);
             cloud_actifvation=0;
             flag=0;
 
