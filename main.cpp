@@ -22,6 +22,8 @@ void init()
 {
     glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
     glOrtho(0.0, 2850.0, 0.0, 3000.0, 0.0, 3000.0);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+glEnable( GL_BLEND );
 }
 
 
@@ -80,9 +82,12 @@ void circle3(float radius_x, float radius_y)
 void inner_body()
 {
       glPushMatrix();
-     glTranslatef(0.0,40.0,0); //Here glTranslate is used for proper positioning of the shape on the screen. Try to change the values here and see the effect
+     glTranslatef(0.0,40.0,0);
       glBegin(GL_POLYGON);
-      glColor3f(0.8627450980392157, 0.8627450980392157, 0.8627450980392157);
+      //glColor3f(0.8627450980392157, 0.8627450980392157, 0.8627450980392157);
+glColor4f(0.8627450980392157, 0.8627450980392157, 0.8627450980392157,0.7);
+
+
       //glColor3f(0.9607843137254902, 0.7411764705882353, 0.1215686274509804);
 
       glVertex2f (672+u,955+f);
@@ -1344,6 +1349,10 @@ void left_ear()
        glTranslatef(-34,-5.0,0); //Here glTranslate is used for proper positioning of the shape on the screen. Try to change the values here and see the effect
        glBegin(GL_POLYGON);
        glColor3f(0.9529411764705882, 0.6470588235294118, 0.596078431372549);
+        //glColor4f(0.9529411764705882, 0.6470588235294118, 0.596078431372549,0.7);
+
+
+
        glVertex2f( 1073+u,1592+f);
 glVertex2f( 1063+u,1590+f);
 glVertex2f( 1052+u,1588+f);
@@ -2024,9 +2033,6 @@ glVertex2f(801+u,1057+f);
 glVertex2f(793+u,1059+f);
 glVertex2f(784+u,1061+f);
 glVertex2f(400+u,955+f);
-
-
-
        glEnd();
       glPopMatrix();
 }
@@ -2039,7 +2045,9 @@ void left_eye()
        glBegin(GL_POLYGON);
        //glColor3f(0.8627450980392157, 0.8627450980392157, 0.8627450980392157);
         //glColor3f(0.88, 0.88, 0.88);
-        glColor3f(0.9529411764705882, 0.6470588235294118, 0.596078431372549);
+        glColor4f(0.9529411764705882, 0.6470588235294118, 0.596078431372549,0.9);
+
+         //glColor3f(0.9529411764705882, 0.6470588235294118, 0.596078431372549);
        glVertex2f( 605+u,1356+f);
 glVertex2f( 611+u,1364+f);
 glVertex2f( 613+u,1370+f);
@@ -2111,10 +2119,6 @@ glVertex2f( 564+u,1350+f);
 glVertex2f( 572+u,1350+f);
 glVertex2f( 580+u,1348+f);
 glVertex2f( 592+u,1348+f);
-
-
-
-
        glEnd();
       glPopMatrix();
 }
@@ -2127,7 +2131,8 @@ void right_eye()
        glTranslatef(0.0,-5.0,0); //Here glTranslate is used for proper positioning of the shape on the screen. Try to change the values here and see the effect
        glBegin(GL_POLYGON);
        //glColor3f(0.88, 0.88, 0.88);
-       glColor3f(0.9529411764705882, 0.6470588235294118, 0.596078431372549);
+       glColor4f(0.9529411764705882, 0.6470588235294118, 0.596078431372549,0.9);
+       //glColor3f(0.9529411764705882, 0.6470588235294118, 0.596078431372549);
        glVertex2f( 733+u,1339+f);
 glVertex2f( 729+u,1345+f);
 glVertex2f( 725+u,1354+f);
@@ -2216,9 +2221,6 @@ void right_eye_ball()
        circle(24,50);
        glPopMatrix();
 }
-
-
-
 
 void mouth()
 {
@@ -2834,9 +2836,53 @@ void ball()
 
     glPushMatrix();
        glTranslatef(270,2720.0,0);
-       glColor3f(0.9607843137254902, 0.7411764705882353, 0.1215686274509804);
+       glColor4f(0.9607843137254902, 0.7411764705882353, 0.1215686274509804,0.1);
+       circle2(220,220);
+       glPopMatrix();
+
+        glPushMatrix();
+       glTranslatef(270,2720.0,0);
+       glColor4f(0.9607843137254902, 0.7411764705882353, 0.1215686274509804,0.2);
        circle2(200,200);
        glPopMatrix();
+
+        glPushMatrix();
+       glTranslatef(270,2720.0,0);
+       glColor4f(0.9607843137254902, 0.7411764705882353, 0.1215686274509804,0.3);
+       circle2(180,180);
+       glPopMatrix();
+
+
+ glPushMatrix();
+       glTranslatef(270,2720.0,0);
+       glColor4f(0.9607843137254902, 0.7411764705882353, 0.1215686274509804,0.5);
+       circle2(160,160);
+       glPopMatrix();
+
+ glPushMatrix();
+       glTranslatef(270,2720.0,0);
+       glColor4f(0.9607843137254902, 0.7411764705882353, 0.1215686274509804,0.7);
+       circle2(140,140);
+       glPopMatrix();
+
+
+ glPushMatrix();
+       glTranslatef(270,2720.0,0);
+       glColor4f(0.9607843137254902, 0.7411764705882353, 0.1215686274509804,0.8);
+       circle2(120,120);
+       glPopMatrix();
+
+
+ glPushMatrix();
+       glTranslatef(270,2720.0,0);
+       glColor4f(0.9607843137254902, 0.7411764705882353, 0.1215686274509804,1);
+       circle2(100,100);
+       glPopMatrix();
+
+
+
+
+
 }
 
 void tal_cloud()
@@ -3170,7 +3216,7 @@ void tal_cloud4()
 
 }
 
-void print_bitmap_string(/*void* font,*/ char* s)
+void print_bitmap_string( char* s)
 {
 
       while (*s) {
@@ -3182,43 +3228,31 @@ void print_bitmap_string(/*void* font,*/ char* s)
 
 void draw_stuff1()
 {
+	glDisable(GL_BLEND);
    char* bitmap_font_names[10]= {"Welcome to the final presentation of 2D project!"};
-
    GLfloat x, y, ystep, yild, stroke_scale;
-
-   /* Draw the strings, according to the current mode and font. */
    glPushMatrix();
    glTranslatef(120,1508.0,0);
    glColor4f(0.0, 0.0, 0.0, 0.0);
-   x = 225.0;
-   y = 70.0;
-   ystep  = 100.0;
-   yild   = 20.0;
-      glRasterPos2f(1050+u, y+1.25*yild+f);
+     glRasterPos2f(1050+u, 100+f);
      print_bitmap_string(bitmap_font_names[0]);
      glPopMatrix();
+     glEnable(GL_BLEND);
 }
 
 void draw_stuff2()
 {
+	glDisable(GL_BLEND);
    char* bitmap_font_names[10]= {"Hi, I this is Talking Tom! How are you all?"};
-
    GLfloat x, y, ystep, yild, stroke_scale;
-
-   /* Draw the strings, according to the current mode and font. */
    glPushMatrix();
    glTranslatef(120,1508.0,0);
    glColor4f(0.0, 0.0, 0.0, 0.0);
-   x = 225.0;
-   y = 70.0;
-   ystep  = 100.0;
-   yild   = 20.0;
-      glRasterPos2f(1050+u, y+1.25*yild+f);
+      glRasterPos2f(1050+u, 100+f);
      print_bitmap_string(bitmap_font_names[0]);
      glPopMatrix();
+     glEnable(GL_BLEND);
 }
-
-
 
 
 void talk_text()
@@ -4177,8 +4211,8 @@ void forest()
     glPushMatrix();
     glTranslatef(0.0,1300.0,0); //Here glTranslate is used for proper positioning of the shape on the screen. Try to change the values here and see the effect
     glBegin(GL_POLYGON);
-      glColor3f(0.1490196078431373, 0.4156862745098039, 0.1803921568627451);
-
+      ///glColor3f(0.1490196078431373, 0.4156862745098039, 0.1803921568627451);
+ glColor4f(0.1490196078431373, 0.4156862745098039, 0.1803921568627451,0.5);
 
 glVertex2f(2900,645);
 glVertex2f(2896,645);
@@ -4339,7 +4373,7 @@ void surface_ball()
 
     glPushMatrix();
        glTranslatef(2000,320.0,0);
-       glColor3f(0.4156862745098039, 0.4235294117647059, 0.4274509803921569);
+       glColor4f(0.87843137254901960784313725490196, 0.48235294117647058823529411764706, 0.22352941176470588235294117647059,0.9);
        //glColor3f(0.05882352941176470588235294117647, 0.08627450980392156862745098039216, 0.93333333333333333333333333333333);
        circle3(160,260);
        glPopMatrix();
@@ -4352,63 +4386,63 @@ void myDisplay()
 
 
 
-glColor3f(0.2f, 0.0f, 0.74f);
+	glColor3f(0.2f, 0.0f, 0.74f);
 
-water();
-sky();
+	water();
+	sky();
 
-island();
-island_land();
+	island();
+	island_land();
 
-forest();
-island_tree();
-island_tree_struct();
-island_tree_struct_top();
+	forest();
+	island_tree();
+	island_tree_struct();
+	island_tree_struct_top();
 
 
-land();
-surface_ball();
-left_hand();
-outer_sceleton();
+	land();
+	surface_ball();
+	left_hand();
+	outer_sceleton();
 
-left_leg();
-right_leg();
-tail();
-outer_head();
-right_hand();
-inner_body();
-left_ear();
-right_ear();
-left_eye();
-right_eye();
-left_eye_ball();
-right_eye_ball();
-mouth();
-left_1();
-left_2();
-left_3();
-right_1();
-right_2();
-right_3();
-nose();
-//nose_left();
-//nose_right();
-left_spike1();
-left_spike2();
-right_spike1();
-right_spike2();
-ball();
+	left_leg();
+	right_leg();
+	tail();
+	outer_head();
+	right_hand();
+	inner_body();
+	left_ear();
+	right_ear();
+	left_eye();
+	right_eye();
+	left_eye_ball();
+	right_eye_ball();
+	mouth();
+	left_1();
+	left_2();
+	left_3();
+	right_1();
+	right_2();
+	right_3();
+	nose();
+	//nose_left();
+	//nose_right();
+	left_spike1();
+	left_spike2();
+	right_spike1();
+	right_spike2();
+	ball();
 
-tal_cloud();
-tal_cloud2();
-tal_cloud3();
-tal_cloud4();
+	tal_cloud();
+	tal_cloud2();
+	tal_cloud3();
+	tal_cloud4();
 
-talk_text();
-sky_cloud1();
-sky_cloud2();
-sky_cloud3();
-sky_cloud4();
+	talk_text();
+	sky_cloud1();
+	sky_cloud2();
+	sky_cloud3();
+	sky_cloud4();
 
 
 
@@ -4423,15 +4457,8 @@ sky_cloud4();
 
     	p=p+0.2;
     }
-
-
-
-     glutPostRedisplay();//calls the display func again
+     glutPostRedisplay();
 }
-
-
-
-
 void spe_key(int key, int x, int y)
 {
 
@@ -4520,24 +4547,9 @@ void my_mouse(int button, int state, int x, int y)
    }
 }
 
-
 int main()
 {
-    // if(sound==1)
-    // {
-    //     PlaySound("welcome.wav", NULL, SND_FILENAME| SND_ASYNC);
-    // }
-    // else if(sound==2)
-    // {
-    //     PlaySound("hi.wav", NULL, SND_FILENAME| SND_ASYNC);
-    // }
-    // else
-    // {
-    //     
-    // }
-    PlaySound("background.wav", NULL, SND_FILENAME| SND_ASYNC);
-
-    //PlaySound("welcome.wav", NULL, SND_FILENAME| SND_ASYNC);
+    //PlaySound("background.wav", NULL, SND_FILENAME| SND_ASYNC);
     glutInitWindowSize(1250,650);
     glutInitWindowPosition(50,10);
     glutCreateWindow("Talking Tom");
